@@ -1,0 +1,127 @@
+﻿@page
+@model LoginModel
+
+@{
+    Layout = "";
+    ViewData["Title"] = "Log in";
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<link rel="Stylesheet" href="~/PTC/ptc.css?d=180122-1" />
+<link rel="Stylesheet" href="~/PTC/print.css?d=180122-1" media="print" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+@*<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/5893E978-1A65-4E4A-8041-3AB385644785/main.js" charset="UTF-8"></script>*@
+<script src="~/js/libs/jquery-2.1.1.min.js"></script>
+<script src="~/js/libs/jquery-ui-1.10.3.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Ads: 979498069 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-979498069"></script>
+
+
+<body>
+    <form method="post">
+
+        <div class="main" id="main">
+            <div id="header" class="header">
+                <img alt="Pipeline Testing Consortium Inc." src="~/PTC/images/span.gif" width="320px" height="96px" usemap="#logomap" class="hlNoDecoration" style="float:left;position:relative;" />
+                <map id="logomap" name="logomap">
+                    <area id="logoarea" shape="rect" coords="20,20,300,96" href="https://www.pipelinetesting.com" alt="Pipeline Testing Consortium Inc." class="hlNoDecoration" />
+                </map>
+
+                <div class="clear"></div>
+            </div>
+            <div id="content" class="content">
+               
+                <div class="page_be">
+                    <div class="content-login">
+                        <div class="loginctl">
+
+                            <h2>
+                                <span id="BodyContent_lblTitle">PTC Online Log In</span>
+                            </h2>
+
+                            <div id="BodyContent_LoginPanel">
+
+
+
+                                <div class="accountInfo">
+                                    <fieldset class="login">
+                                        <legend>Account Information</legend>
+
+                                       
+                                        <div asp-validation-summary="All" class="text-danger"></div>
+                                        <div class="form-group">
+                                            <label asp-for="Input.Email"></label>
+                                            <input asp-for="Input.Email" class="form-control" />
+                                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="Input.Password"></label>
+                                            <input asp-for="Input.Password" class="form-control" />
+                                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label asp-for="Input.RememberMe">
+                                                    <input asp-for="Input.RememberMe" />
+                                                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="form-group">
+                                        <p class="submitButton">
+                                            <input type="submit" name="ctl00$BodyContent$LoginUser$LoginButton" value="Log In" tabindex="4" />
+                                        </p>
+                                      
+                                    </div>
+                                   
+                                  
+                                      
+
+                                   
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer" id="footer">
+                <div id="footerleft">
+                    <span class="largetext">Pipeline Testing Consortium, Inc.</span><br />
+                    7 Compound Dr.<br />
+                    Hutchinson, KS 67502<br />
+                    620.669.8800<br />
+                    <br />
+                    <div id="footerdisclaimer">
+                        <a href="https://www.pipelinetesting.com/terms.aspx" class="FooterNavigation">Disclaimer and Terms of Use</a>
+                    </div>
+                </div>
+                <div id="footercenter" onclick="window.location.href = 'joinptc.aspx';">
+                    &nbsp;
+                </div>
+                <div id="footerright">
+                    <a href="/compliance.aspx" class="footersvcs">Why Choose PTC?</a><br />
+                    <a href="/collsiteenrollment.aspx" class="footersvcs">Join the PTC Collection Site Network</a><br />
+                    <a href="https://colsites.pipelinetesting.com" class="footersvcs">Collection Site Update</a><br />
+                    <div id="rightcopyright">
+                        <p>&copy;<span id="lblYear">2018</span> Pipeline Testing Consortium, Inc.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+    </form>
+</body>
+<!-- start number replacer -->
+@*<script type="text/javascript" src="//adtrack.voicestar.com/euinc/number-changer.js"></script>*@
+
+<!-- end ad widget -->
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

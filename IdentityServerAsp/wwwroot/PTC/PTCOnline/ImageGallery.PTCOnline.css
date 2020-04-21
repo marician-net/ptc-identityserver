@@ -1,0 +1,30 @@
+.RadImageGallery_PTCOnline {
+  color: #333333; }
+  .RadImageGallery_PTCOnline .rigDotList > a {
+    background: #ffffff;
+    border-color: #cccccc; }
+  .RadImageGallery_PTCOnline .rigDotList .rigCurrentItem {
+    color: #44b400; }
+  .RadImageGallery_PTCOnline .rigToolbar {
+    color: #333333;
+    background-color: rgba(230, 230, 230, 0.8); }
+  .RadImageGallery_PTCOnline .rigCloseButton,
+  .RadImageGallery_PTCOnline .rigDrawerButton {
+    color: #333333;
+    background-color: rgba(230, 230, 230, 0.8); }
+  .RadImageGallery_PTCOnline .rigProgressBar div {
+    background-color: #44b400; }
+  .RadImageGallery_PTCOnline .rigPager {
+    border-color: #b3b3b3;
+    color: #333333;
+    background-color: #e6e6e6; }
+    .RadImageGallery_PTCOnline .rigPager a.rigCurrentPage {
+      border-color: #44b400;
+      color: #44b400; }
+  .RadImageGallery_PTCOnline .rigTooltip {
+    background-color: #ffffff;
+    border-color: #cccccc; }
+    .RadImageGallery_PTCOnline .rigTooltip:after {
+      border-top-color: #ffffff; }
+  .RadImageGallery_PTCOnline .rigToolbar .rigActionButton:hover {
+    color: #44b400; }

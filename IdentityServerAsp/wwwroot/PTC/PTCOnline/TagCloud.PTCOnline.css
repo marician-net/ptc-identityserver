@@ -1,0 +1,13 @@
+.RadTagCloud_PTCOnline {
+  border-color: #cccccc;
+  color: #333333;
+  background-color: #ffffff; }
+  .RadTagCloud_PTCOnline.rtcClassic {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 12px; }
+  .RadTagCloud_PTCOnline .rtcTagItem a {
+    color: #44b400; }
+  .RadTagCloud_PTCOnline .rtcTagItem a:hover {
+    color: #276800; }
+  .RadTagCloud_PTCOnline.rtcLoading {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.PTCOnline.Common.loading_small.gif")%>'); }

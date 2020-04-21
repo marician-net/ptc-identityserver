@@ -1,0 +1,95 @@
+@using IdentityServer4.Quickstart.UI
+@model LoginViewModel
+
+@{
+    Layout = "/Views/Shared/_PtcLayout.cshtml";
+    ViewData["Title"] = "Log in";
+}
+
+
+            <div class="page_be">
+                <div class="content-login">
+                    <div class="loginctl">
+
+                        <h2>
+                            <span id="BodyContent_lblTitle">PTC Online Log In</span>
+                        </h2>
+                        @Html.Partial("_ValidationSummary")
+
+                        <div id="BodyContent_LoginPanel">
+
+
+                            <div id="BodyContent_LoginUser_LoginUserValidationSummary" class="error" style="display:none;">
+
+                            </div>
+
+
+                            <div class="accountInfo">
+
+
+
+                                @if (Model.EnableLocalLogin)
+                                {
+
+                                    <form asp-route="Login">
+                                        <input type="hidden" asp-for="ReturnUrl" />
+                                        <input type="hidden" asp-for="ForgotPasswordLoginUri" />
+
+                                        <fieldset class="login">
+                                            <legend>Account Information</legend>
+
+                                            <p>Please enter your username and password.</p>
+                                            <div class="form-group">
+                                                <p>
+                                                    <label for="BodyContent_LoginUser_UserName" id="BodyContent_LoginUser_UserNameLabel">Username:</label>
+                                                    <input asp-for="Username" type="text" id="BodyContent_LoginUser_UserName" tabindex="1" class="textEntry" />
+                                                    <span id="BodyContent_LoginUser_UserNameRequired" title="User Name is required." class="error" style="visibility:hidden;">*</span>
+                                                </p>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <p>
+                                                    <label for="BodyContent_LoginUser_Password" id="BodyContent_LoginUser_PasswordLabel">Password:</label>
+                                                    <input asp-for="Password" type="password" id="BodyContent_LoginUser_Password" tabindex="2" class="passwordEntry" autocomplete="off" />
+                                                    <span id="BodyContent_LoginUser_PasswordRequired" title="Password is required." class="error" style="visibility:hidden;">*</span>
+                                                    <a id="BodyContent_LoginUser_hlForgotPassword" href="@Url.Action("ForgotPassword", "Account",new { ForgotPasswordLoginUri = Model.ForgotPasswordLoginUri })">Forgot Password</a>
+                                                </p>
+
+                                            </div>
+
+                                        </fieldset>
+                                        <p class="submitButton">
+                                            <button type="submit" name="button" id="BodyContent_LoginUser_LoginButton" tabindex="4" value="login">Log In</button>
+                                            @*<input type="submit" name="button" id="BodyContent_LoginUser_LoginButton" tabindex="4" value="login" />*@
+                                        </p>
+                                        <div class="clear">&nbsp;</div>
+                                    </form>
+                                }
+
+                            </div>
+
+
+                            <div id="BillPayWindow" style="background-color:#eeeeee;padding:5px;margin:6px;border:1px solid #cccccc; float:right; width:275px;">
+                                <h4>Looking for Online Bill Pay? </h4>
+                                <span>PTC Online and Online Bill Pay require seperate logins. Please click <a href="https://accounts.pipelinetesting.com" class="bluelink">here</a> to view and/or pay your invoice online.</span>
+                            </div>
+
+                        </div>
+                        <div class="clear"></div>
+
+                    </div>
+                </div>
+            </div>
+
+        
+     
+
+
+
+<!-- start number replacer -->
+@*<script type="text/javascript" src="//adtrack.voicestar.com/euinc/number-changer.js"></script>*@
+
+<!-- end ad widget -->
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

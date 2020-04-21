@@ -1,0 +1,15 @@
+.RadDock_PTCOnline {
+  border-color: #cccccc;
+  color: #333333;
+  background-color: #ffffff; }
+  .RadDock_PTCOnline .rdTitleWrapper {
+    border-color: #cdcdcd;
+    color: #333333;
+    background-color: #e6e6e6;
+    background-image: linear-gradient(#fafafa, #e6e6e6);
+    border-color: inherit; }
+  .RadDock_PTCOnline .rdCommandButton:hover {
+    border-color: #318100;
+    color: #000000;
+    background-color: #44b400;
+    background-image: linear-gradient(#57e700, #44b400); }

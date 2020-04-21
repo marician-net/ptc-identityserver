@@ -1,0 +1,46 @@
+﻿@using IdentityServer4.Extensions
+
+@{
+    Layout = "_LayoutBoot";
+}
+
+
+
+@section Header
+    {
+
+    <!--Mask-->
+    <div class="page-header logged-out">
+        <h1>
+            Logout
+            <small>You are now logged out</small>
+        </h1>
+
+        @if (Model.PostLogoutRedirectUri != null)
+        {
+            <div>
+                Click <a class="PostLogoutRedirectUri" href="@Model.PostLogoutRedirectUri">here</a> to return to the
+                <span>@Model.ClientName</span> application.
+            </div>
+        }
+
+        @if (Model.SignOutIframeUrl != null)
+        {
+            <iframe width="0" height="0" class="signout" src="@Model.SignOutIframeUrl"></iframe>
+        }
+    </div>
+    <!--Mask-->
+}
+
+<!--Main Navigation-->
+<!--Footer-->
+<footer></footer>
+<!--Footer-->
+<!-- /Start your project here-->
+@section Scripts
+{
+    @if (Model.AutomaticRedirectAfterSignOut)
+    {
+        <script src="~/js/signout-redirect.js"></script>
+    }
+}

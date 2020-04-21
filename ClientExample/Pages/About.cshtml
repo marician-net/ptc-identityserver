@@ -1,0 +1,23 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+<p><b>access_token</b></p>
+<p>@User.Claims.FirstOrDefault(c => c.Type == "access_token")?.Value</p>
+<p>id_token</p>
+<p>@User.Claims.FirstOrDefault(c => c.Type == "id_token")?.Value</p>
+<dl>
+
+
+    @foreach (var claim in User.Claims)
+    {
+        <dt>@claim.Type</dt>
+        <dd>@claim.Value</dd>
+    }
+</dl>

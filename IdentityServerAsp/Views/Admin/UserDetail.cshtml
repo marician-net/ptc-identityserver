@@ -1,0 +1,178 @@
+﻿
+@model ApplicationUsers
+@{
+    ViewData["Title"] = "UserDetail";
+    Layout = "_LayoutAdmin";
+}
+
+
+
+<!-- MAIN CONTENT -->
+<div id="content">
+    <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+            <h1 class="page-title txt-color-blueDark">
+                <i class="fa fa-pencil-square-o fa-fw "></i>
+                Forms
+            </h1>
+        </div>
+    </div>
+  
+
+    <!-- widget grid -->
+    <section id="widget-grid" class="">
+
+
+
+        <!-- row -->
+        <div class="row">
+
+            <!-- NEW WIDGET START -->
+            <article class="col-sm-12 col-md-12 col-lg-6">
+
+                <!-- Widget ID (each widget will need unique ID)-->
+                <div class="jarviswidget" id="wid-id-0" data-widget-colorbutton="false" data-widget-editbutton="false"
+                     data-widget-togglebutton="false"
+                     data-widget-deletebutton="false"
+                     data-widget-fullscreenbutton="false">
+
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-eye"></i> </span>
+                        <h2>UserDetail</h2>
+
+                    </header>
+
+                    <!-- widget div-->
+                    <div>
+
+                        <!-- widget edit box -->
+                        <div class="jarviswidget-editbox">
+                            <!-- This area used as dropdown edit box -->
+
+                        </div>
+                        <!-- end widget edit box -->
+                        <!-- widget content -->
+                        <div class="widget-body">
+
+                            <form class="form-horizontal" method="post" action="UserDetail">
+
+                                <fieldset>
+
+
+                                    @Html.Hidden("Id", Model.Id)
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">UserName</label>
+                                        <div class="col-md-10">
+
+                                            @Html.TextBox("UserName", Model.UserName, new { @class = "form-control" })
+                                            @*<input class="form-control" placeholder="UserName" type="text">*@
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">FirstName</label>
+                                        <div class="col-md-10">
+                                            @Html.TextBox("firstName", Model.firstName, new { @class = "form-control" })
+                                            @*<input class="form-control" placeholder="First Name" type="text">*@
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">LastName</label>
+                                        <div class="col-md-10">
+                                            @Html.TextBox("lastName", Model.lastName, new { @class = "form-control" })
+                                            @*<input class="form-control" placeholder="Last Name" type="text">*@
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Email</label>
+                                        <div class="col-md-10">
+                                            @Html.TextBox("Email", Model.Email, new { @class = "form-control" })
+                                            @*<input class="form-control" placeholder="Email" type="email">*@
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Admin</label>
+                                        <div class="col-md-10">
+                                            <div class="checkbox">
+                                                <label>
+                                                    @Html.CheckBox("IsAdmin", Model.IsAdmin)
+                                                    @Html.CheckBox("IsAdmin", Model.IsAdmin)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                                <div class="form-actions">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-default" type="submit">
+                                                Cancel
+                                            </button>
+                                            <button class="btn btn-primary" type="submit">
+                                                <i class="fa fa-save"></i>
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <!-- end widget content -->
+
+                    </div>
+                    <!-- end widget div -->
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+
+
+    </section>
+    <!-- end widget grid -->
+
+</div>
+<!-- END MAIN CONTENT -->
+
+@section Scripts {
+    <script type="text/javascript">
+
+        // DO NOT REMOVE : GLOBAL FUNCTIONS!
+
+        $(document).ready(function () {
+
+            // PAGE RELATED SCRIPTS
+
+            // class switcher for radio and checkbox
+            $('input[name="demo-switcher-1"]').change(function () {
+                //alert($(this).val())
+                $this = $(this);
+
+                myNewClass = $this.attr('id');
+
+                $('.demo-switcher-1 input[type="checkbox"]').removeClass();
+                $('.demo-switcher-1 input[type="checkbox"]').addClass("checkbox " + myNewClass);
+
+                $('.demo-switcher-1 input[type="radio"]').removeClass();
+                $('.demo-switcher-1 input[type="radio"]').addClass("radiobox " + myNewClass);
+
+            })
+
+        })
+
+    </script>
+}

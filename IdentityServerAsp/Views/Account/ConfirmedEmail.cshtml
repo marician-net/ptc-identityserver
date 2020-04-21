@@ -1,0 +1,32 @@
+﻿@using IdentityServer4.Quickstart.UI
+@model IdentityServerAsp.ViewModel.UserPasswordCheckViewModel
+
+@{
+    Layout = "/Views/Shared/_PtcLayout.cshtml";
+    ViewData["Title"] = "ConfirmEmail";
+}
+
+<div class="page_be">
+    <div class="content-login">
+        <div class="loginctl">
+            <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+                <div class="row d-flex justify-content-center text-center">
+
+                    <div class="col-md-10">
+                        <p class="text-info">
+                            Your password has been changed successfully.
+                        </p>
+                        <p class="submitButton">
+                            <a href="@ViewBag.RedirectUri">
+                                <button type="submit" name="button" tabindex="5" value="ForgotPassword">Login</button>
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

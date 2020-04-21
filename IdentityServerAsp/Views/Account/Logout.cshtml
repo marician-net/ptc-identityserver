@@ -1,0 +1,56 @@
+﻿@using IdentityServer4.Extensions
+
+@{
+    Layout = "_LayoutBoot";
+}
+
+
+
+@section Header
+{
+    <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+        <div class="row d-flex justify-content-center text-center">
+
+            <div class="col-md-10">
+
+                <!-- Heading -->
+                <h2 class="display-4 font-weight-bold black-text pt-5 mb-2">PTC Online Identity Server</h2>
+
+                <!-- Divider -->
+                <hr class="hr-dark">
+
+                <!-- Description -->
+                <h4 class="black-text my-4">Would you like to Logout?</h4>
+                <form asp-action="Logout">
+                    <input type="hidden" name="logoutId" value="@Model.LogoutId" />
+                    <fieldset>
+                        <div class="form-group">
+                            <button class="btn btn-primary">Yes</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <p></p>
+
+        </div>
+    </div>
+}
+
+
+
+
+
+<!--Main Navigation-->
+<!--Footer-->
+<footer></footer>
+<!--Footer-->
+<!-- /Start your project here-->
+@section Scripts
+{}

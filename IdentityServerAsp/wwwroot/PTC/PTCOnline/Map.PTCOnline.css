@@ -1,0 +1,44 @@
+.RadMap_PTCOnline .k-navigator {
+  border-color: #b3b3b3;
+  color: #333333;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(white, #e6e6e6); }
+
+.RadMap_PTCOnline .k-button {
+  border-color: #b3b3b3;
+  color: #333333;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(white, #e6e6e6); }
+
+.RadMap_PTCOnline .k-button:hover,
+.RadMap_PTCOnline .k-navigator > .k-button:hover {
+  border-color: #318100;
+  color: #000000;
+  background-color: #44b400;
+  background-image: linear-gradient(#57e700, #44b400); }
+
+.RadMap_PTCOnline .k-button:active,
+.RadMap_PTCOnline .k-button:focus,
+.RadMap_PTCOnline .k-navigator > .k-button:active,
+.RadMap_PTCOnline .k-navigator > .k-button:focus {
+  border-color: #676767;
+  color: #ffffff;
+  background-color: #808080;
+  background-image: linear-gradient(#9a9a9a, #808080); }
+
+.RadMap_PTCOnline .k-marker {
+  color: #44b400; }
+
+.RadMap_PTCOnline.k-tooltip {
+  border-color: #b3b3b3;
+  color: #333333;
+  background-color: #e6e6e6; }
+  .RadMap_PTCOnline.k-tooltip .k-tooltip-button {
+    color: #333333;
+    background-color: #e6e6e6; }
+  .RadMap_PTCOnline.k-tooltip .k-tooltip-button:hover {
+    color: #44b400; }
+
+@media \0screen\,screen\9 {
+  .RadMap_PTCOnline .k-icon {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.PTCOnline.Common.radActionsSprite.png")%>'); } }

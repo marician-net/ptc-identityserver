@@ -1,0 +1,48 @@
+.RadNavigation_PTCOnline .rnvRootGroupWrapper {
+  border-color: #cdcdcd;
+  color: #333333;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(#fafafa, #e6e6e6); }
+
+.RadNavigation_PTCOnline .rnvRootLink {
+  border-color: transparent; }
+
+.RadNavigation_PTCOnline .rnvMore {
+  border-color: #cdcdcd;
+  color: #333333;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(#fafafa, #e6e6e6); }
+
+.RadNavigation_PTCOnline .rnvHovered.rnvMore,
+.RadNavigation_PTCOnline .rnvHovered > .rnvRootLink {
+  border-color: #a6a6a6;
+  color: #333333;
+  background-color: silver;
+  background-image: linear-gradient(#d4d4d4, silver); }
+
+.RadNavigation_PTCOnline .rnvSelected.rnvMore,
+.RadNavigation_PTCOnline .rnvSelected > .rnvRootLink,
+.RadNavigation_PTCOnline .rnvExpanded > .rnvRootLink {
+  border-color: #8d8d8d;
+  color: #333333;
+  background-color: #a6a6a6;
+  background-image: linear-gradient(#bbbbbb, #a6a6a6); }
+
+.RadNavigation_PTCOnline .rnvFocused.rnvMore,
+.RadNavigation_PTCOnline .rnvFocused > .rnvRootLink {
+  border-color: rgba(141, 141, 141, 0.5);
+  box-shadow: inset 0 0 3px rgba(141, 141, 141, 0.5); }
+
+.radSkin_PTCOnline .rnvPopup {
+  border-color: #cccccc;
+  color: #333333;
+  background-color: #ffffff; }
+  .radSkin_PTCOnline .rnvPopup .rnvHovered > .rnvLink {
+    color: #000000;
+    background-color: #44b400; }
+  .radSkin_PTCOnline .rnvPopup .rnvSelected > .rnvLink,
+  .radSkin_PTCOnline .rnvPopup .rnvExpanded > .rnvLink {
+    color: #ffffff;
+    background-color: #808080; }
+  .radSkin_PTCOnline .rnvPopup .rnvFocused > .rnvLink {
+    box-shadow: inset 0 0 3px rgba(103, 103, 103, 0.5); }

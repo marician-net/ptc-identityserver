@@ -1,0 +1,22 @@
+.RadRating_PTCOnline a:before {
+  color: #9f9f9f; }
+
+.RadRating_PTCOnline .rrtOver span,
+.RadRating_PTCOnline a:hover .rrtPartComplement,
+.RadRating_PTCOnline .rrtVertical .rrtSelected.rrtOver a,
+.RadRating_PTCOnline .rrtSelected .rrtPartSelected,
+.RadRating_PTCOnline .rrtSelected.rrtOver a {
+  color: #9f9f9f; }
+
+.RadRating_PTCOnline .rrtSelected span {
+  color: #ff8700; }
+
+.RadRating_PTCOnline .rrtSelected .rrtPart,
+.RadRating_PTCOnline .rrtSelected.rrtOver span {
+  color: #cb0000; }
+
+.RadRating_PTCOnline .rrtReversed .rrtPart:before {
+  color: #9f9f9f; }
+
+.RadRating_PTCOnline .rrtReversed .rrtSelected .rrtPartComplement:before {
+  color: #cb0000; }

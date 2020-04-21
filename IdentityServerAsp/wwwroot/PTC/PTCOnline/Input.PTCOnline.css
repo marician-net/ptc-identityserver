@@ -1,0 +1,83 @@
+.RadInput_PTCOnline .riTextBox,
+.RadInput_PTCOnline .riSelect,
+.RadInput_PTCOnline .rcSelect,
+.RadInputMgr_PTCOnline {
+  border-color: #b3b3b3;
+  color: #333333;
+  background-color: #ffffff; }
+
+.RadInput_PTCOnline .riEmpty,
+.RadInput_Empty_PTCOnline {
+  color: rgba(51, 51, 51, 0.8); }
+
+.RadInput_PTCOnline.RadInputHovered .riTextBox,
+.RadInput_PTCOnline.RadInputHovered .riSelect,
+.RadInput_PTCOnline.RadInputHovered .rcSelect,
+.RadInput_Hover_Default {
+  border-color: darkgray;
+  color: #333333;
+  background-color: #ffffff; }
+
+.RadInput_PTCOnline.RadInputFocused .riTextBox,
+.RadInput_PTCOnline.RadInputFocused .riSelect,
+.RadInput_PTCOnline.RadInputFocused .rcSelect,
+.RadInput_Focused_PTCOnline {
+  border-color: #449e2e;
+  color: #333333;
+  background-color: #ffffff; }
+
+.RadInput_PTCOnline.RadInputError .riTextBox,
+.RadInput_PTCOnline.RadInputError .riSelect,
+.RadInput_PTCOnline.RadInputError .rcSelect,
+.RadInput_Error_PTCOnline,
+.RadForm.rfdTextbox .RadInput_PTCOnline .riError[type="text"],
+.RadForm.rfdTextbox .RadInput_Error_Default[type="text"] {
+  border-color: #d51923;
+  color: #d51923;
+  background-color: #ffffff; }
+
+.RadInput_PTCOnline.RadInputError {
+  color: #d51923; }
+
+.RadInput_PTCOnline .riNegative,
+.RadInput_Negative_Default {
+  color: #4d4d4d; }
+
+.RadInput_PTCOnline a,
+.RadInput_PTCOnline.RadInputDisabled a:hover,
+.RadInput_PTCOnline.RadInputDisabled a:active {
+  border-color: #b3b3b3;
+  color: #333333;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(white, #e6e6e6); }
+
+.RadInput_PTCOnline a:hover {
+  border-color: darkgray;
+  color: #000000;
+  background-color: #c2c2c2;
+  background-image: linear-gradient(gainsboro, #c2c2c2); }
+
+.RadInput_PTCOnline a:active {
+  border-color: #449e2e;
+  color: #ffffff;
+  background-color: #55c639;
+  background-image: linear-gradient(#77d161, #55c639); }
+
+.RadInput_PTCOnline .riLabel {
+  color: #333333; }
+
+.RadInput_PTCOnline .riResizeIcon {
+  background: url('<%=WebResource("Telerik.Web.UI.Skins.PTCOnline.Common.radActionsSprite.png")%>') no-repeat transparent;
+  background-position: -6.5px -966.5px;
+  margin-bottom: -1px; }
+
+.RadInputRTL_Default .riError,
+.RadInputRTL_Error_PTCOnline {
+  background-position: 3px -298px; }
+
+.RadInputRTL_Default .riResizeIcon {
+  background-position: -6.5px -986.5px; }
+
+.RadForm.rfdTextbox .RadInputRTL_Default .riError[type="text"],
+.RadForm.rfdTextbox .RadInputRTL_Error_Default[type="text"] {
+  background-position: 3px -298px; }

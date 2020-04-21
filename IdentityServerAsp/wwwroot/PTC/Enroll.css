@@ -1,0 +1,553 @@
+﻿.outerMultiPage {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: auto;
+    height:auto;
+}
+
+.innerMultiPage {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    margin-bottom: 3px;
+    margin-right: 5px;
+    width: auto;
+    height: auto;
+}
+
+.hide {
+    display: none !important;
+    overflow: hidden;
+}
+
+.RadButton {
+    height: 96px;
+    width: 100%;
+}
+
+.RadGrid {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.RadGrid_ModernBrowsers {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.failureNotification {
+    color: Red !important;
+}
+
+div.RadGrid_MetroTouch td.rgPagerCell {
+    border-left: 0;
+}
+
+div.table {
+    display: table;
+    table-layout: fixed;
+    width: 1120px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+    div.table div {
+        display: table-row;
+    }
+
+        div.table div div {
+            padding: 1px;
+            display: table-cell;
+            height: 35px;
+            vertical-align: middle;
+        }
+
+.table-layout {
+    table-layout: fixed;
+    max-width: 1100px;
+    width: 1100px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+.table-model {
+    table-layout: fixed;
+    column-width: 65px;
+    width: 650px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+.table-fixed {
+    table-layout: fixed;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+tr.height {
+    height: 25px;
+}
+
+.ErrorMessage {
+    color: Red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    display: block;
+}
+
+.Error {
+    color: Red;
+}
+
+.SuccessMessage {
+    color: Green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    display: block;
+}
+
+.Success {
+    color: Green;
+}
+
+.Warning {
+    color: Orange;
+}
+
+.RadGrid_Rounded {
+    position: relative;
+}
+
+/*Page Layout*/
+.gridHeader {
+    position: relative;
+    background-image: url(Images/btns.png);
+    background-repeat: no-repeat;
+    background-position: 100% -80px;
+    padding-right: 161px;
+}
+
+    .gridHeader > div {
+        background: #9ad0da url("Images/header.png") no-repeat;
+        height: 80px;
+        margin: 0;
+    }
+
+    .gridHeader button.saveButton,
+    .gridHeader button.loadButton {
+        height: 80px;
+        width: 80px;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+        border: 0 none;
+        border-radius: 0;
+    }
+
+    .gridHeader .saveButton span,
+    .gridHeader .loadButton span {
+        text-indent: -9999px;
+        display: block;
+    }
+
+    .gridHeader button.saveButton {
+        right: 81px;
+        background-position: -80px 0;
+    }
+
+.divider_background {
+    font-weight: 300;
+    background-color: #000099;
+    color: white;
+}
+
+.container-width {
+    padding-left: 4%;
+    width: 100%;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.container-scroll {
+    padding-left: 2%;
+    width: 100%;
+    height: 575px;
+    overflow-y: scroll;
+}
+
+.contactus-scroll {
+    padding-left: 2%;
+    width: 1000px;
+    height: 710px;
+    overflow-y: auto;
+}
+
+.row_background {
+    background-color: #ececec
+}
+
+.middle_text {
+    vertical-align: middle;
+}
+
+.right_align {
+    text-align: right;
+}
+
+.right-middle-align {
+    vertical-align: middle;
+    text-align: right;
+}
+
+.left-middle-align {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.btn-gradient {
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 1px 3px 7px #666;
+    background: linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+}
+
+.center_text {
+    text-align: center;
+}
+
+.standard_font {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.checkbox-div {
+    height: 30px;
+    vertical-align: middle;
+    align-content: flex-end;
+}
+
+.round-corners {
+    border-radius: 10px;
+}
+
+.no-margins {
+    padding: 0px;
+    margin: 0px;
+}
+
+.line {
+    width: 960px;
+    height: 25px;
+    border-bottom: 2px solid black;
+    position: absolute;
+}
+
+.portal-header {
+    position: relative;
+    min-height: 100px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    /*background-image: url('/App_Themes/PTC/images/footer_grad.jpg');
+    background-repeat: repeat-x;*/
+    background-image: url('/App_Themes/PTC/images/header_full_96.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    height: 96px;
+    vertical-align: top;
+    /*background-color: #00213d;*/
+    background-color: #001120;
+    color: White;
+}
+
+.add_gridheader {
+    font-size: medium;
+    font-weight: bold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    /*background-color:#002e58;*/
+    /*background-color:#828282;*/ /*dark gray*/
+    /*background-color:#E4ECFC;*/ /*light blue*/
+    /*background-color:#79a747;*/ /*forresty olive green*/
+    /*background-color:#5dcf61;*/ /*pastel green*/
+    /*background-color:#44b400;*/ /*bright green*/
+    /*background-color:#50d500;*/ /*bright lighter green*/
+    /*background-color:#63cc23;*/ /*bright light green*/
+    /*background-color:#01af07;*/
+    background-color: #78bf4a !important;
+    background-image: url('images/gridheader_grad_sm12.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #222222 !important;
+    text-align: center;
+    vertical-align: middle;
+    height: 24px;
+}
+
+.headerDiv {
+    color: white !important;
+    background-color: #63c236;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    height: 30px;
+    align-content: center;
+}
+
+.subHeaderDiv {
+    color: white !important;
+    background-color: Highlight;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.headerDiv span {
+    color: white !important;
+}
+
+.acknoledgements {
+    font-size: x-small;
+    background-color: #f1f1f1;
+    border: 2px
+}
+
+.ltRounded,
+.rtRounded,
+.lbRounded,
+.rbRounded {
+    background: url(images/rounded_corners.png);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -1px;
+    left: -1px;
+}
+
+.rtRounded {
+    right: -1px;
+    left: auto;
+    background-position: -10px 0;
+}
+
+.lbRounded {
+    top: auto;
+    bottom: -1px;
+    background-position: 0 -10px;
+}
+
+.rbRounded {
+    top: auto;
+    left: auto;
+    right: -1px;
+    bottom: -1px;
+    background-position: -10px -10px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html .demo-container {
+    max-width: 1280px;
+}
+
+/*Wizard wrapper*/
+.demo-container {
+    width: 1280px;
+    margin: 20px auto 20px;
+    padding: 0 20px;
+    border: 0;
+}
+
+    .demo-container .wizardHeader {
+        width: 100%;
+        height: 50px;
+    }
+
+    /*Wizard*/
+    .demo-container .RadWizard {
+        padding: 20px;
+        border: 1px solid #f1f1f1;
+        border-bottom: 0;
+        box-shadow: 0 0 0 1px #fff;
+    }
+
+.background-black .demo-container .RadWizard,
+.background-blackmetrotouch .demo-container .RadWizard,
+.background-glow .demo-container .RadWizard,
+.background-office2010black .demo-container .RadWizard {
+    border: 0;
+    box-shadow: 0;
+}
+
+.demo-container .RadWizard_Material .rwzBreadCrumb .rwzText:before {
+    display: none;
+}
+
+.demo-container .RadWizard_Material .rwzBreadCrumb .rwzLink {
+    padding-left: 10px;
+}
+
+.rwzImage {
+    background-image: url(/App_Themes/PTC/images/bread-crumb-icons.png);
+}
+
+html .RadWizard .rwzBreadCrumb span.rwzImage {
+    width: 24px;
+    height: 24px;
+}
+
+.demo-container .companyInfo.rwzImage {
+    background-position: 0 0;
+}
+
+.demo-container .rwzSelected .companyInfo.rwzImage {
+    background-position: -25px 0;
+}
+
+.demo-container .rwzDisabled .companyInfo.rwzImage {
+    background-position: -50px 0;
+}
+
+.demo-container .personalInfo.rwzImage {
+    background-position: 0 -25px;
+}
+
+.demo-container .rwzSelected .personalInfo.rwzImage {
+    background-position: -25px -25px;
+}
+
+.demo-container .rwzDisabled .personalInfo.rwzImage {
+    background-position: -50px -25px;
+}
+
+.demo-container .contactDetails.rwzImage {
+    background-position: 0 -50px;
+}
+
+.demo-container .rwzSelected .contactDetails.rwzImage {
+    background-position: -25px -50px;
+}
+
+.demo-container .rwzDisabled .contactDetails.rwzImage {
+    background-position: -50px -50px;
+}
+
+.demo-container .confirmation.rwzImage {
+    background-position: 0 -75px;
+}
+
+.demo-container .rwzSelected .confirmation.rwzImage {
+    background-position: -25px -75px;
+}
+
+.demo-container .rwzDisabled .confirmation.rwzImage {
+    background-position: -50px -75px;
+}
+
+.demo-container .RadWizard .rwzContent {
+    overflow: hidden;
+    background-color: #f5f5f6;
+    line-height: 2em;
+    margin: 0 -20px;
+    padding: 0 20px;
+}
+
+.background-black .demo-container .rwzContent,
+.background-blackmetrotouch .demo-container .rwzContent,
+.background-glow .demo-container .rwzContent,
+.background-office2010black .demo-container .rwzContent {
+    background-color: transparent;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.background-silver .demo-container .rwzContent {
+    background-color: transparent;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.background-sunset .demo-container .rwzContent {
+    background: #f9f5f0;
+}
+
+/*Wizard content*/
+.demo-container .inputWapper {
+    display: inline-block;
+    *display: inline;
+    width: 300px;
+    position: relative;
+    zoom: 1;
+}
+
+    .demo-container .inputWapper.first {
+        margin-right: 15px;
+    }
+
+    .demo-container .inputWapper label {
+        display: block;
+        margin: 5px 0 0;
+    }
+
+.demo-container .validator {
+    color: #ff0000;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.demo-container .anti-spam-policy {
+    margin-top: 40px;
+}
+
+.demo-container .conditions {
+    display: block;
+    color: #a7a7a7;
+    font-size: 0.857em;
+}
+
+.demo-container .inputWapper.date .riLabel {
+    position: absolute;
+}
+
+.demo-container .RadWizard .rwzStep {
+    height: 100%;
+    position: relative;
+}
+
+.demo-container .RadWizard.rwzComplete {
+    padding-top: 95px;
+}
+
+.demo-container .rwzStep p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.demo-container .RadWizard .complete {
+    height: auto;
+    padding: 75px 0;
+    text-align: center;
+}

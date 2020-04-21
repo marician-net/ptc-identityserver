@@ -1,0 +1,16 @@
+.RadNotification_PTCOnline {
+  border-color: #cccccc;
+  color: #333333;
+  background-color: #ffffff; }
+  .RadNotification_PTCOnline .rnTitleBar {
+    border-color: #cdcdcd;
+    color: #333333;
+    background-color: #e6e6e6;
+    background-image: linear-gradient(#fafafa, #e6e6e6); }
+  .RadNotification_PTCOnline .rnCommands a:hover {
+    border-color: #318100;
+    color: #000000;
+    background-color: #44b400;
+    background-image: linear-gradient(#57e700, #44b400); }
+  .RadNotification_PTCOnline.rnShadows {
+    box-shadow: 2px 2px 3px rgba(204, 204, 204, 0.5); }

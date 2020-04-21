@@ -1,0 +1,66 @@
+.RadTabStrip_PTCOnline {
+  color: #333333; }
+  .RadTabStrip_PTCOnline .rtsLevel1 {
+    border-color: #cccccc; }
+    .RadTabStrip_PTCOnline .rtsLevel1 .rtsLink {
+      border-color: #cdcdcd;
+      color: #333333;
+      background-color: #e6e6e6;
+      background-image: linear-gradient(#fafafa, #e6e6e6); }
+    .RadTabStrip_PTCOnline .rtsLevel1 .rtsHovered .rtsLink {
+      border-color: #a6a6a6;
+      color: #333333;
+      background-color: silver;
+      background-image: linear-gradient(#d4d4d4, silver); }
+    .RadTabStrip_PTCOnline .rtsLevel1 .rtsSelected .rtsLink {
+      border-color: #cccccc;
+      color: #333333;
+      background-color: #ffffff;
+      background-image: none; }
+    .RadTabStrip_PTCOnline .rtsLevel1 .rtsFocused .rtsLink {
+      border-color: #8d8d8d;
+      box-shadow: inset 0 0 5px #8d8d8d; }
+  .RadTabStrip_PTCOnline .rtsLevel1 ~ .rtsLevel {
+    border-color: #cccccc;
+    color: #333333;
+    background-color: #ffffff; }
+    .RadTabStrip_PTCOnline .rtsLevel1 ~ .rtsLevel .rtsLink {
+      color: #44b400; }
+    .RadTabStrip_PTCOnline .rtsLevel1 ~ .rtsLevel .rtsHovered .rtsLink {
+      color: #276800; }
+    .RadTabStrip_PTCOnline .rtsLevel1 ~ .rtsLevel .rtsSelected .rtsLink {
+      color: inherit;
+      text-decoration: underline; }
+    .RadTabStrip_PTCOnline .rtsLevel1 ~ .rtsLevel .rtsFocused .rtsLink {
+      border-color: #8d8d8d;
+      box-shadow: inset 0 0 5px #8d8d8d; }
+  .RadTabStrip_PTCOnline .rtsGhostTab {
+    border-color: #cdcdcd;
+    color: #333333;
+    background-color: #e6e6e6;
+    background-image: linear-gradient(#fafafa, #e6e6e6);
+    border-radius: 4px; }
+
+.RadTabStrip_PTCOnline.rtsTop .rtsLevel1 .rtsLink {
+  border-radius: 4px 4px 0 0; }
+
+.RadTabStrip_PTCOnline.rtsTop .rtsLevel1 .rtsSelected .rtsLink {
+  border-bottom-color: transparent; }
+
+.RadTabStrip_PTCOnline.rtsBottom .rtsLevel1 .rtsLink {
+  border-radius: 0 0 4px 4px; }
+
+.RadTabStrip_PTCOnline.rtsBottom .rtsLevel1 .rtsSelected .rtsLink {
+  border-top-color: transparent; }
+
+.RadTabStrip_PTCOnline.rtsLeft .rtsLevel1 .rtsLink {
+  border-radius: 4px 0 0 4px; }
+
+.RadTabStrip_PTCOnline.rtsLeft .rtsLevel1 .rtsSelected .rtsLink {
+  border-right-color: transparent; }
+
+.RadTabStrip_PTCOnline.rtsRight .rtsLevel1 .rtsLink {
+  border-radius: 0 4px 4px 0; }
+
+.RadTabStrip_PTCOnline.rtsRight .rtsLevel1 .rtsSelected .rtsLink {
+  border-left-color: transparent; }

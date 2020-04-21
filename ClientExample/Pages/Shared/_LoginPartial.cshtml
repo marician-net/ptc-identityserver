@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+
+<form method="POST">
+<ul class="nav navbar-nav navbar-right">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <button type="submit" asp-page-handler="Logout" class="btn btn-link navbar-btn navbar-link">Logout</button>
+    }
+    else
+    {
+        <button type="submit" asp-page-handler="Login" class="btn btn-link navbar-btn navbar-link">Login</button>
+    }
+</ul>
+</form>
+
+

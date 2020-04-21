@@ -1,0 +1,26 @@
+.RadTreeView_PTCOnline {
+  color: #333333; }
+  .RadTreeView_PTCOnline .rtIn {
+    border-radius: 3px; }
+  .RadTreeView_PTCOnline .rtChkTristate:hover {
+    color: #44b400; }
+  .RadTreeView_PTCOnline .rtLoadingIcon {
+    background-image: url('<%=WebResource("Telerik.Web.UI.Skins.PTCOnline.Common.loading_small.gif")%>'); }
+  .RadTreeView_PTCOnline .rtPlusHover,
+  .RadTreeView_PTCOnline .rtMinusHover {
+    color: #44b400; }
+  .RadTreeView_PTCOnline .rtLines .rtTop:before,
+  .RadTreeView_PTCOnline .rtLines .rtMid:before,
+  .RadTreeView_PTCOnline .rtLines .rtBot:before,
+  .RadTreeView_PTCOnline .rtLines .rtLI:before {
+    border-color: #cccccc; }
+  .RadTreeView_PTCOnline .rtHover .rtIn {
+    border-color: #318100;
+    color: #000000;
+    background-color: #44b400;
+    background-image: linear-gradient(#57e700, #44b400); }
+  .RadTreeView_PTCOnline .rtSelected .rtIn {
+    border-color: #676767;
+    color: #ffffff;
+    background-color: #808080;
+    background-image: linear-gradient(#9a9a9a, #808080); }

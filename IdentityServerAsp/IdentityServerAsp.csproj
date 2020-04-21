@@ -1,0 +1,135 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-IdentityServerAsp-4215A833-6A69-4DD7-9101-391C47122A84</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\**" />
+    <Compile Remove="Logs\**" />
+    <Content Remove="Areas\**" />
+    <Content Remove="Logs\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <None Remove="Areas\**" />
+    <None Remove="Logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20190211201635_PtcOnlineId.cs" />
+    <Compile Remove="Data\Migrations\20190211201635_PtcOnlineId.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4" Version="2.3.0" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="2.3.0" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="2.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Azure.KeyVault" Version="3.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="4.5.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" PrivateAssets="All" />
+    <PackageReference Include="MimeKit" Version="2.1.3" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Account\ConfirmedEmail.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Account\ConfirmEmailError.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Account\Logout.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Account\LoggedOut.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Admin\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Admin\Users.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\index\addons\" />
+    <Folder Include="wwwroot\css\index\modules\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Ajax\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\AutoCompleteBox\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Button\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Calendar\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Chart\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\CloudUpload\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ColorPicker\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ComboBox\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Common\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\DataForm\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\DataPager\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\DatePicker\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\DateTimePicker\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Diagram\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Dock\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\DropDownList\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\DropDownTree\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Editor\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\FileExplorer\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Filter\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\FormDecorator\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Gantt\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\HtmlChart\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ImageEditor\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ImageGallery\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Input\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Label\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\LightBox\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\LinearGauge\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ListBox\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ListView\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Map\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\MediaPlayer\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Navigation\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Notification\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\OrgChart\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\PanelBar\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\PivotGrid\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ProgressArea\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ProgressBar\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\RadialGauge\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Rating\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\RibbonBar\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Rotator\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\SchedulerRecurrenceEditor\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Scheduler\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\SearchBox\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\SiteMap\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Slider\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\SocialShare\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Spell\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Splitter\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Spreadsheet\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\TabStrip\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\TagCloud\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\TileList\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Tile\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\TimePicker\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ToolBar\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\ToolTip\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\TreeList\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\TreeMap\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\TreeView\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Upload\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Window\" />
+    <Folder Include="wwwroot\PTC\PTCOnline\Wizard\" />
+  </ItemGroup>
+
+</Project>

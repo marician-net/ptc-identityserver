@@ -1,0 +1,10 @@
+﻿@if (ViewContext.ModelState.IsValid == false)
+{
+    <div id="DIV_1" class="alert alert-danger">
+        <strong>Your login attempt was not successful. Please try again.</strong>
+        <div class="clear"></div>
+
+    </div>
+    <div id="DIV_2" asp-validation-summary="All" class="danger"></div>
+    <div class="clear"></div>
+}

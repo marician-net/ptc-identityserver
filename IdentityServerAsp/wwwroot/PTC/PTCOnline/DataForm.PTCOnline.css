@@ -1,0 +1,9 @@
+.RadDataForm_PTCOnline {
+  color: #333333; }
+  .RadDataForm_PTCOnline .rdfLegend,
+  .RadDataForm_PTCOnline .rdfBorders {
+    border-color: #b3b3b3; }
+  .RadDataForm_PTCOnline .rdfHr {
+    color: #b3b3b3; }
+  .RadDataForm_PTCOnline .rdfFieldHint {
+    color: #b3b3b3; }

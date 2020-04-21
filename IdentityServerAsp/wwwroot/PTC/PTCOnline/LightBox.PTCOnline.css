@@ -1,0 +1,29 @@
+.RadLightBox_PTCOnline .rltbWrapper {
+  border-color: #cccccc;
+  color: #333333;
+  background-color: #ffffff; }
+
+.RadLightBox_PTCOnline .rltbDescOverlayTop,
+.RadLightBox_PTCOnline .rltbDescOverlayBottom {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.RadLightBox_PTCOnline .rltbActionButton:hover {
+  color: #44b400; }
+
+.RadLightBox_PTCOnline .rltbCloseButton {
+  border-color: #389500;
+  color: #ffffff;
+  background-color: #44b400;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
+
+.RadLightBox_PTCOnline .rltbCloseButton:hover {
+  border-color: #2d7700;
+  color: #ffffff;
+  background-color: #389500;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
+
+.RadLightBox_PTCOnline .rltbCloseButton:active {
+  border-color: #215800;
+  color: #ffffff;
+  background-color: #2d7700;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }

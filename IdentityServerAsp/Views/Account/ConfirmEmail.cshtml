@@ -1,0 +1,82 @@
+﻿@using IdentityServer4.Quickstart.UI
+@model IdentityServerAsp.ViewModel.UserPasswordCheckViewModel
+
+@{
+    Layout = "/Views/Shared/_PtcLayout.cshtml";
+    ViewData["Title"] = "ConfirmEmail";
+}
+
+
+<style>
+    .accountInfoforgotpassword {
+        width: 465px;
+    }
+
+    #newpwd {
+        margin-left: 48px;
+    }
+
+    .required-field::after {
+        content: "*";
+        color: red;
+    }
+</style>
+
+<div class="page_be">
+    <div class="content-login">
+        <div class="loginctl">
+
+            <h2>
+                Change Password
+            </h2>
+
+            <p>
+                Your account has been confirmed, Use the form below to change your password.
+            </p>
+                                 
+            <div class="accountInfoforgotpassword">
+                <form method="post">
+                    <fieldset class="changePassword">
+                        <legend>Account Information</legend>
+                        <input type="hidden" asp-for="UserId" value="@ViewBag.UserId" />
+                        <input asp-for="RedirectUri" value ="@ViewBag.RedirectUri" type="hidden"/>
+
+                        <p id="newpwd">
+                            <label class="required-field">New Password:</label>
+                            <input type="password" asp-for="Password" tabindex="1" />
+                            <span asp-validation-for="Password" style="color:red"></span>
+
+                        </p>
+                        <p>
+                            <label class="required-field">Confirm New Password:</label>
+                            <input type="password" asp-for="ConfirmPassword" tabindex="2" />
+
+                            <span asp-validation-for="ConfirmPassword" style="color:red"></span>
+
+                        </p>
+                        <p>
+                            <label>Reset all UserNames to same password</label>
+                            <input type="checkbox" asp-for="ResetAllUsernames" tabindex="3"/>
+                        </p>
+
+                    </fieldset>
+                    <p class="submitButton">
+                        <button type="submit" class="btn btn-default">Set password</button>
+                    </p>
+                </form>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
